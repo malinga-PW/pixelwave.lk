@@ -57,11 +57,11 @@ const Footer: React.FC = () => {
                     <div className="pos-rel z-1">
                         {/* === Footer Nav === */}
                         <ul className="ac-footer-nav list-unstyled ul_li">
-                            <li><a className="scrollspy-btn" href="#features">Features</a></li>
+                            <li><a className="scrollspy-btn" href="#features">Infrastructure</a></li>
                             <li><a className="scrollspy-btn" href="#process">Process</a></li>
-                            <li><a className="scrollspy-btn" href="#integration">Integration</a></li>
-                            <li><a className="scrollspy-btn" href="#pricing">Pricing</a></li>
-                            <li><a className="scrollspy-btn" href="#faq">Faq’s</a></li>
+                            <li><a className="scrollspy-btn" href="#integration">Integrations</a></li>
+                            <li><a className="scrollspy-btn" href="#pricing">Packs & Pricing</a></li>
+                            <li><a className="scrollspy-btn" href="#faq">FAQ</a></li>
                             <li><Link to="/contact">Contact us</Link></li>
                         </ul>
 
@@ -70,7 +70,7 @@ const Footer: React.FC = () => {
                                 {/* === Social Media === */}
                                 <div className="col-lg-3 col-md-5 footer-col">
                                     <div className="xb-footer-item xb-social_media">
-                                        <p className="sub-title">Join our social group</p>
+                                        <p className="sub-title">Connect with us</p>
                                         <ul className="xb-social_icon ul_li list-unstyled">
                                             <li>
                                                 <a href="https://x.com/" target="_blank" rel="noopener noreferrer">
@@ -120,13 +120,13 @@ const Footer: React.FC = () => {
                                 {/* === Newsletter === */}
                                 <div className="col-lg-6 col-md-7 footer-col">
                                     <div className="xb-footer-item xb-newsletter">
-                                        <p className="sub-title">Subscribe to our newsletter</p>
+                                        <p className="sub-title">Subscribe to our network</p>
                                         <form
                                             className="xb-footer-input-form"
                                             onSubmit={handleSubmit}
                                         >
                                             <input type="email" placeholder="Enter your email" required />
-                                            <button type="submit">Submit</button>
+                                            <button type="submit">Initialize</button>
                                         </form>
                                     </div>
                                 </div>
@@ -134,10 +134,10 @@ const Footer: React.FC = () => {
                                 {/* === CTA Button === */}
                                 <div className="col-lg-3 col-md-5 footer-col">
                                     <div className="xb-footer-item xb-footer-btn">
-                                        <p className="sub-title">You can’t afford it?</p>
+                                        <p className="sub-title">Need a custom architecture?</p>
                                         <div className="footer-btn">
                                             <Link className="thm-btn chatbot-btn" to="/contact">
-                                                start for free
+                                                Consult Elena.AI
                                                 <span className="arrow-icon">
                                                     {[...Array(2)].map((_, i) => (
                                                         <svg
@@ -243,7 +243,7 @@ const Footer: React.FC = () => {
                         {/* === Copyright === */}
                         <div className="xb-copyright ul_li_between">
                             <p>
-                                Copyright © 2025 <Link to="/ai-chatbot">Aivora</Link>, All rights reserved.
+                                Copyright © 2026 <Link to="/">PixelWave AI Solutions</Link>, All rights reserved.
                             </p>
                             <ul className="ai-footer-links ul_li">
                                 <li><Link to="/contact">Terms & Conditions</Link></li>
@@ -257,7 +257,7 @@ const Footer: React.FC = () => {
             {/* === Footer Title === */}
             <div className="xb-footer-bottom-title wow fadeInUp" data-wow-duration="600ms">
                 <h2 className="title">
-                    Aivora AI <span>chatbot</span>
+                    PixelWave AI <span>Solutions</span>
                     <img src={diamondIcon} alt="icon" />
                 </h2>
             </div>

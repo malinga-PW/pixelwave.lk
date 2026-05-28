@@ -16,63 +16,43 @@ import avatar5 from "../../images/avatar/img05.jpg";
 const testimonials = [
   {
     id: 1,
-    source: "GoodFirms",
+    source: "Client Feedback",
     rating: "5.0",
     content:
-      '“We saw a big boost in engagement and sales with their recommendation engine. It personalizes the shopping experience perfectly.”',
-    name: "Riya Mehta",
-    designation: "Manager - Trendico",
+      "PixelWave helped us strengthen our online presence and improve how customers discover our products. Their guidance and website solutions gave our business a more professional image.",
+    name: "Harendra Amarasinghe",
+    designation: "MaxwellLanka.com",
     avatar: avatar1,
   },
   {
     id: 2,
-    source: "Clutch",
-    rating: "4.9",
+    source: "Client Feedback",
+    rating: "5.0",
     content:
-      '“Their NLP tool saves us hours by extracting key info from large documents instantly. It’s fast, accurate, and a huge time-saver.”',
-    name: "Miguel Torres",
-    designation: "CEO & Funder - DocFlow",
+      "The team understood our tourism business requirements and helped us present our services more effectively online. Communication and support were excellent throughout the project.",
+    name: "Subhash Chandana",
+    designation: "BSTours.lk",
     avatar: avatar2,
   },
   {
     id: 3,
-    source: "Clutch",
+    source: "Client Feedback",
     rating: "5.0",
     content:
-      '“Their automation solutions saved us countless hours. Tasks that took days are now completed in minutes. The ROI was almost immediate.”',
-    name: "Sebastian Clark",
-    designation: "Manager - SwiftLogix",
+      "PixelWave provided valuable support for our tea export business. Their professional approach and focus on branding helped us create a stronger digital presence.",
+    name: "Sachi Wijethunga",
+    designation: "CupzoTea.com",
     avatar: avatar3,
   },
   {
     id: 4,
-    source: "GoodFirms",
+    source: "Client Feedback",
     rating: "5.0",
     content:
-      '“The AI chatbot they developed has transformed our customer service. We now handle 70% of queries with higher customer satisfaction!”',
-    name: "Priya Ramirez",
-    designation: "CEO - BrightNest",
+      "We wanted a better way to present our accommodation services online. PixelWave delivered a clean and modern solution while providing ongoing support when needed.",
+    name: "Thilina Prasanna",
+    designation: "Memos Inn",
     avatar: avatar4,
-  },
-  {
-    id: 5,
-    source: "Clutch",
-    rating: "4.7",
-    content:
-      '“We gained deep insights into customer behavior and performance. Their analytics made our decision-making sharper and more confident.”',
-    name: "Sebastian Clark",
-    designation: "Director - Finexa Capital",
-    avatar: avatar5,
-  },
-  {
-    id: 6,
-    source: "Clutch",
-    rating: "5.0",
-    content:
-      '“Their automation solutions saved us countless hours. Tasks that took days are now completed in minutes. The ROI was almost immediate.”',
-    name: "Sebastian Clark",
-    designation: "Manager - SwiftLogix",
-    avatar: avatar3,
   },
 ];
 

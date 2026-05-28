@@ -11,7 +11,6 @@ import avatar1 from "../../images/avatar/img01.jpg";
 import avatar2 from "../../images/avatar/img02.jpg";
 import avatar3 from "../../images/avatar/img03.jpg";
 import avatar4 from "../../images/avatar/img04.jpg";
-import avatar5 from "../../images/avatar/img05.jpg";
 
 const testimonials = [
   {

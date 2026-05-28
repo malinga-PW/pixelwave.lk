@@ -13,6 +13,7 @@ import TestimonialSection from "../../components/Testimonial/Testimonial";
 import BlogSection from "../../components/BlogSection/BlogSection";
 import Footer from "../../components/footer/Footer";
 import Scrollbar from "../../components/scrollbar/scrollbar";
+import PricingSection from "../../components/ai-chatbot-components/PricingSection/PricingSection";
 
 const HomePage: React.FC = () => {
 
@@ -42,6 +43,9 @@ const HomePage: React.FC = () => {
             {/* Why Choose Us / Features */}
             <FeatureSection />
 
+            {/* Pricing / Features */}
+            <PricingSection/>
+            
             {/* Portfolio / Projects */}
             <ProjectSection />
 

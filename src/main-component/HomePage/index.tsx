@@ -1,4 +1,5 @@
 import React, { Fragment, useEffect } from "react";
+
 import Header from "../../components/Header/Header";
 import HeroSection from "../../components/hero/Hero";
 import AboutSection from "../../components/about/about";
@@ -13,33 +14,62 @@ import BlogSection from "../../components/BlogSection/BlogSection";
 import Footer from "../../components/footer/Footer";
 import Scrollbar from "../../components/scrollbar/scrollbar";
 
-
 const HomePage: React.FC = () => {
+
   useEffect(() => {
-    document.title = "Home | AI Agency & Technology React Template";
+    document.title = "PixelWave.lk | AI + Human Powered Business Growth Solutions";
   }, []);
 
   return (
     <Fragment>
-        <div className='ai-agency'>
-          <div className="body_wrap o-clip">
-            <Header />
-            <main>
-              <HeroSection/>
-              <AboutSection/>
-              <ServiceSection/>
-              <FeatureSection/>
-              <ProjectSection/>
-              <IndustriesMarqueeSection/>
-              <IndustriesSection/>
-              <ContactSection/>
-              <TestimonialSection/>
-              <BlogSection/>
-            </main>
-            <Footer />
-            <Scrollbar />
-          </div>
+      <div className='ai-agency'>
+        <div className="body_wrap o-clip">
+
+          {/* Header */}
+          <Header />
+
+          <main>
+
+            {/* Hero Section */}
+            <HeroSection />
+
+            {/* About PixelWave */}
+            <AboutSection />
+
+            {/* Services */}
+            <ServiceSection />
+
+            {/* Why Choose Us / Features */}
+            <FeatureSection />
+
+            {/* Portfolio / Projects */}
+            <ProjectSection />
+
+            {/* AI Business Growth Marquee */}
+            <IndustriesMarqueeSection />
+
+            {/* Industries We Support */}
+            <IndustriesSection />
+
+            {/* Client Testimonials */}
+            <TestimonialSection />
+
+            {/* Blog / SEO Content */}
+            <BlogSection />
+
+            {/* Contact Section */}
+            <ContactSection />
+
+          </main>
+
+          {/* Footer */}
+          <Footer />
+
+          {/* Scroll Top */}
+          <Scrollbar />
+
         </div>
+      </div>
     </Fragment>
   );
 };

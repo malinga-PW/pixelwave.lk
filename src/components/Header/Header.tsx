@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import logo from "../../images/logo/logo.svg";
+import logo from "../../images/logo/logo.svg"; // Make sure to replace this SVG with the PixelWave logo
 import MegaMenu1 from "./MegaMenu1";
 import MegaMenuServices from "./MegaMenu2";
 import MobileMenu from "../MobileMenu/MobileMenu";
@@ -57,7 +57,7 @@ const Header: React.FC = () => {
             {/* Logo */}
             <div className="xb-header-logo">
               <Link to="/" className="logo1" onClick={handleClick}>
-                <img src={logo} alt="Logo" />
+                <img src={logo} alt="PixelWave AI Solutions" />
               </Link>
             </div>
 
@@ -72,17 +72,17 @@ const Header: React.FC = () => {
                     <ul className="submenu">
                       <li>
                         <Link to="/" onClick={handleClick}>
-                          <span>Ai Agency</span>
+                          <span>Enterprise AI</span>
                         </Link>
                       </li>
                       <li>
                         <Link to="/ai-marketing" onClick={handleClick}>
-                          <span>Ai Marketing</span>
+                          <span>Automated Workflows</span>
                         </Link>
                       </li>
                       <li>
                         <Link to="/ai-chatbot" onClick={handleClick}>
-                          <span>Ai Chatbot</span>
+                          <span>Hardware Engineering</span>
                         </Link>
                       </li>
                     </ul>
@@ -90,38 +90,39 @@ const Header: React.FC = () => {
 
                   <li>
                     <Link to="/about" onClick={handleClick}>
-                      <span>About Us</span>
+                      <span>About PixelWave</span>
                     </Link>
                   </li>
 
-                  {/* MegaMenu */}
+                  {/* MegaMenu - Pages */}
                   <li className="menu-item-has-children megamenu">
                     <Link to="#" onClick={handleClick}>
-                      <span>Pages</span>
+                      <span>Infrastructure</span>
                     </Link>
                     <MegaMenu1 />
                   </li>
 
+                  {/* MegaMenu - Services */}
                   <li className="menu-item-has-children megamenu">
                     <Link to="#" onClick={handleClick}>
-                      <span>Services</span>
+                      <span>Packs & Pricing</span>
                     </Link>
                     <MegaMenuServices />
                   </li>
 
                   <li className="menu-item-has-children">
                     <Link to="/blog" onClick={handleClick}>
-                      <span>Blog</span>
+                      <span>Insights</span>
                     </Link>
                     <ul className="submenu">
                       <li>
                         <Link to="/blog" onClick={handleClick}>
-                          <span>Blog</span>
+                          <span>Tech Blog</span>
                         </Link>
                       </li>
                       <li>
                         <Link to="/blog-details" onClick={handleClick}>
-                          <span>Blog Details</span>
+                          <span>Case Studies</span>
                         </Link>
                       </li>
                     </ul>
@@ -136,10 +137,10 @@ const Header: React.FC = () => {
               </nav>
             </div>
 
-            {/* Button */}
+            {/* Button - PixelWave CTA */}
             <div className="header-btn">
               <Link to="/contact" className="thm-btn" onClick={handleClick}>
-                Join Now
+                Consult Elena.AI
               </Link>
             </div>
 
@@ -165,7 +166,7 @@ const Header: React.FC = () => {
 
                 <div className="xb-logo-mobile xb-hide-xl">
                   <Link to="/" rel="home">
-                    <img src={logo} alt="Logo" />
+                    <img src={logo} alt="PixelWave AI Solutions" />
                   </Link>
                 </div>
 
@@ -173,7 +174,7 @@ const Header: React.FC = () => {
                   <form role="search" onSubmit={handleSubmit}>
                     <input
                       type="text"
-                      placeholder="Search..."
+                      placeholder="Search infrastructure..."
                       name="s"
                       className="search-field"
                     />

@@ -20,16 +20,14 @@ const HeroSection: React.FC = () => {
           <div className="col-lg-9 col-md-9">
             <div className="hero-content">
               <h2 className="title scale-animation wow">
-                Empower your business with smarter AI agency
+                Architecting the Future of Digital & Physical Automation
               </h2>
               <p className="sub-title scale-animation wow">
-                Unlock growth and efficiency with tailored AI solutions. We use
-                automation and data-driven strategies to help you innovate and
-                scale.
+                Unlock growth and efficiency with PixelWave AI Solutions. We engineer custom n8n infrastructures, multi-agent AI swarms, and provide end-to-end startup incubation.
               </p>
               <div className="hero-btn scale-animation wow">
-                <Link className="thm-btn agency-btn" to="/about">
-                  <span className="text">Begin Today with us</span>
+                <Link className="thm-btn agency-btn" to="/contact">
+                  <span className="text">CONSULT ELENA.AI</span>
                   <span className="arrow">
                     <span className="arrow-icon">
                       <svg
@@ -192,10 +190,9 @@ const HeroSection: React.FC = () => {
                   <img src={featureIcon1} alt="icon" />
                 </span>
                 <div className="xb-item--holder">
-                  <h2 className="xb-item--title">Smarter insights</h2>
+                  <h2 className="xb-item--title">Deep Infrastructure</h2>
                   <p className="xb-item--content">
-                    Make faster, data-driven decisions powered by real-time AI
-                    analysis and prediction.
+                    Robust, self-hosted n8n automation and custom PostgreSQL data pipelines.
                   </p>
                 </div>
               </div>
@@ -213,10 +210,9 @@ const HeroSection: React.FC = () => {
                   <img src={featureIcon2} alt="icon" />
                 </span>
                 <div className="xb-item--holder">
-                  <h2 className="xb-item--title">Integrated AI solutions</h2>
+                  <h2 className="xb-item--title">Enterprise AI Agents</h2>
                   <p className="xb-item--content">
-                    No extra tools or plugins needed. Get built-in, scalable AI
-                    from day one.
+                    Autonomous multi-agent swarms and smart decision engines powered by Elena.AI.
                   </p>
                 </div>
               </div>
@@ -234,10 +230,9 @@ const HeroSection: React.FC = () => {
                   <img src={featureIcon3} alt="icon" />
                 </span>
                 <div className="xb-item--holder">
-                  <h2 className="xb-item--title">End-to-end automation</h2>
+                  <h2 className="xb-item--title">Physical to Digital</h2>
                   <p className="xb-item--content">
-                    Eliminate bottlenecks with intelligent workflows that never
-                    leave you guessing.
+                    10+ years of printing expertise bridging AI concepts with luxury packaging.
                   </p>
                 </div>
               </div>

@@ -1,38 +1,142 @@
-.App {
-  text-align: center;
-}
+/* =========================================
+   PixelWave AI - Elena.AI Chat Widget Styles
+========================================= */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.elena-chat-widget {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 350px;
+  height: 500px;
+  background: #111111;
+  border: 1px solid #7B5DFF;
+  border-radius: 15px;
   display: flex;
   flex-direction: column;
+  z-index: 9999;
+  box-shadow: 0 10px 30px rgba(123, 93, 255, 0.2);
+  overflow: hidden;
+  font-family: 'Inter', sans-serif; /* You can change this to match Aivora's font */
+}
+
+.elena-chat-header {
+  background: linear-gradient(90deg, #7B5DFF 0%, #B35DFF 100%);
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
+  font-weight: bold;
+  font-size: 16px;
 }
 
-.App-link {
-  color: #61dafb;
+.elena-chat-header button {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.elena-chat-header button:hover {
+  transform: scale(1.1);
+}
+
+.elena-chat-body {
+  flex: 1;
+  padding: 15px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.chat-msg {
+  max-width: 85%;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-size: 14px;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+.bot-msg {
+  background: #222222;
+  color: #ffffff;
+  align-self: flex-start;
+  border-bottom-left-radius: 2px;
+}
+
+.user-msg {
+  background: #7B5DFF;
+  color: white;
+  align-self: flex-end;
+  border-bottom-right-radius: 2px;
+}
+
+.typing-indicator {
+  font-style: italic;
+  opacity: 0.7;
+  font-size: 12px;
+  background: transparent;
+  padding: 0;
+}
+
+.elena-chat-footer {
+  padding: 12px;
+  background: #1a1a1a;
+  display: flex;
+  gap: 10px;
+  border-top: 1px solid #333;
+}
+
+.elena-chat-footer input {
+  flex: 1;
+  background: #222;
+  border: 1px solid #444;
+  color: white;
+  padding: 10px 12px;
+  border-radius: 6px;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+.elena-chat-footer input:focus {
+  border-color: #7B5DFF;
+}
+
+.elena-chat-footer button {
+  background: #7B5DFF;
+  border: none;
+  color: white;
+  padding: 0 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.elena-chat-footer button:hover {
+  background: #B35DFF;
+}
+
+/* =========================================
+   Scrollbar styling for the chat box 
+========================================= */
+.elena-chat-body::-webkit-scrollbar {
+  width: 6px;
+}
+
+.elena-chat-body::-webkit-scrollbar-track {
+  background: #111;
+}
+
+.elena-chat-body::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 3px;
+}
+
+.elena-chat-body::-webkit-scrollbar-thumb:hover {
+  background: #7B5DFF;
 }

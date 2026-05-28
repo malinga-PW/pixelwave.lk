@@ -1,19 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-// Background image
+// Background
 import serviceBg from "../../images/bg/service-gradient-bg.png";
 
-// Service images
+// Service Images
 import img07 from "../../images/service/img07.jpg";
 import img08 from "../../images/service/img08.jpg";
 import img09 from "../../images/service/img09.jpg";
 import img11 from "../../images/service/img11.jpg";
 
 const ServiceSection: React.FC = () => {
-  // ========================
-  // ICON SVG
-  // ========================
+
+  // Arrow SVG
   const arrowIcon = (
     <svg
       width="31"
@@ -22,6 +21,7 @@ const ServiceSection: React.FC = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
+
       <rect
         x="6.29004"
         y="21.4111"
@@ -30,6 +30,7 @@ const ServiceSection: React.FC = () => {
         transform="rotate(-40.2798 6.29004 21.4111)"
         fill="white"
       />
+
       <rect
         x="9.44824"
         y="7.57031"
@@ -38,6 +39,7 @@ const ServiceSection: React.FC = () => {
         transform="rotate(-40.2798 9.44824 7.57031)"
         fill="white"
       />
+
       <rect
         x="13.4492"
         y="7.90015"
@@ -46,6 +48,7 @@ const ServiceSection: React.FC = () => {
         transform="rotate(-40.2798 13.4492 7.90015)"
         fill="white"
       />
+
       <rect
         x="17.4512"
         y="8.23047"
@@ -54,6 +57,7 @@ const ServiceSection: React.FC = () => {
         transform="rotate(-40.2798 17.4512 8.23047)"
         fill="white"
       />
+
       <rect
         x="21.123"
         y="12.5627"
@@ -62,6 +66,7 @@ const ServiceSection: React.FC = () => {
         transform="rotate(-40.2798 21.123 12.5627)"
         fill="white"
       />
+
       <rect
         x="20.793"
         y="16.5649"
@@ -70,6 +75,7 @@ const ServiceSection: React.FC = () => {
         transform="rotate(-40.2798 20.793 16.5649)"
         fill="white"
       />
+
       <rect
         x="20.4619"
         y="20.5669"
@@ -78,95 +84,170 @@ const ServiceSection: React.FC = () => {
         transform="rotate(-40.2798 20.4619 20.5669)"
         fill="white"
       />
+
     </svg>
   );
 
-  // ========================
-  // ARRAY DATA
-  // ========================
+  // SERVICES DATA
   const services = [
+
     {
-      title: "AI saas product",
+      title: "Premium Website Development",
+
       content:
-        "We build scalable AI-powered SaaS solutions that automate tasks, deliver insights, and boost business performance.",
+        "Modern AI-powered business websites designed to build trust, attract customers, and grow your brand online.",
+
       images: [img07, img07, img07, img07],
+
       link: "/service-details",
     },
+
     {
-      title: "Data and intelligence..",
+      title: "Branding & Digital Identity",
+
       content:
-        "We turn complex data into clear, actionable insights using AI and advanced analytics—empowering smarter decisions.",
+        "Professional logo design, packaging, social branding, and visual identity systems that make businesses stand out.",
+
       images: [img08, img08, img08, img08],
+
       link: "/service-details",
     },
+
     {
-      title: "AI for E-commerce",
+      title: "Advertising & Growth Marketing",
+
       content:
-        "We enhance e-commerce with AI-powered, dynamic pricing, and personalized customer experiences.",
+        "Smart digital marketing campaigns powered by AI analytics, audience targeting, and performance optimization.",
+
       images: [img09, img09, img09, img09],
+
       link: "/service-details",
     },
+
     {
-      title: "AI consulting",
+      title: "AI Automation & SaaS Infrastructure",
+
       content:
-        "We guide businesses in adopting AI strategies, optimizing processes, and integrating technologies for lasting success.",
+        "Custom AI systems, dashboards, workflow automation, quotation engines, and scalable business infrastructure.",
+
       images: [img11, img11, img11, img11],
+
       link: "/service-details",
     },
+
     {
-      title: "AI chatbot virtual",
+      title: "Startup Business Support",
+
       content:
-        "We create intelligent chatbots and virtual assistants that improve customer support and automate interactions 24/7.",
+        "Complete startup launch support including websites, branding, business guidance, marketing, and growth strategy.",
+
       images: [img11, img11, img11, img11],
+
       link: "/service-details",
     },
+
     {
-      title: "AI - marketing",
+      title: "Business Registration & Barcode Solutions",
+
       content:
-        "Use AI to target audiences, personalize campaigns, and analyze data for better engagement and results.",
+        "Business registration guidance, logo registration, barcode setup, and professional business setup support.",
+
       images: [img07, img07, img07, img07],
+
       link: "/service-details",
     },
+
   ];
 
-  // ========================
-  // RETURN SECTION
-  // ========================
   return (
+
     <section
       className="service pos-rel bg_img"
       style={{ backgroundImage: `url(${serviceBg})` }}
     >
+
       <div className="container">
+
+        {/* Section Heading */}
+        <div className="row">
+
+          <div className="col-lg-8">
+
+            <div className="sec-title mb-55">
+
+              <span className="sub-title">
+                OUR SOLUTIONS
+              </span>
+
+              <h2 className="title">
+                Business Growth Solutions
+                <br />
+                Powered By AI + Human Intelligence
+              </h2>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        {/* Services Grid */}
         <div className="row mt-none-30">
+
           {services.map((service, index) => (
+
             <div className="col-lg-6 mt-30" key={index}>
+
               <div className="xb-ser-item xb-border img-hove-effect">
+
                 <div className="xb-item--inner">
+
+                  {/* Title */}
                   <h3 className="xb-item--title border-effect">
-                    <Link to={service.link}>{service.title}</Link>
+
+                    <Link to={service.link}>
+                      {service.title}
+                    </Link>
+
                   </h3>
 
+                  {/* Arrow */}
                   <Link className="xb-item--icon" to={service.link}>
                     {arrowIcon}
                   </Link>
 
-                  <p className="xb-item--content">{service.content}</p>
+                  {/* Description */}
+                  <p className="xb-item--content">
+                    {service.content}
+                  </p>
 
+                  {/* Images */}
                   <div className="xb-item--img xb-img">
+
                     {service.images.map((img, i) => (
+
                       <Link key={i} to={service.link}>
                         <img src={img} alt="service" />
                       </Link>
+
                     ))}
+
                   </div>
+
                 </div>
+
               </div>
+
             </div>
+
           ))}
+
         </div>
+
       </div>
+
     </section>
+
   );
 };
 
